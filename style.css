@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family:Roboto-Medium;
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #102038;
+}
+
+img{
+    background-color: #d48723;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+
+p{
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+h1{
+    font-family: 'comic neue' cursive;
+    font-size: 3rem;
+}
+
+/* Utility Classes */
+.bg-prycolor {background-color: #102038;}
+.bg-seccolor {background-color: #f1dfe4;}
+.bg-darkcolor {background-color: #2a637a;}
+.bg-graycolor {background-color: rgba(0, 0, 0, 0.1);}
+
+.accent-color {color: #ff9000;}
+
+.txt-prycolor {color: #102038;}
+.txt-seccolor {color: #f1dfe4;}
+.txt-graycolor {color: #665b4b;}
+
+.txt-center {text-align: center;}
+
+.txt-small { font-size: 0.8rem;}
+.txt-med { font-size: 1.3rem;}
+.txt-large { font-size: 3rem;}
+.txt-xlarge { font-size: 5rem;}
+.txt-aside { font-size: 2rem;}
+
+.txt-small-bold {font-weight: 700;}
+
+.px-1 {padding: 0 1rem;}
+.px-2 {padding: 0 2rem;}
+.px-3 {padding: 0 2.5rem;}
+
+.py-0 {padding: 0.5rem 0;}
+.py-1 {padding: 1rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 2.5rem 0;}
+
+.p-1 {padding: 0.5rem;}
+.p-2 {padding: 1rem;}
+.p-3 {padding: 1.5rem;}
+
+.mt-1 {margin-top: 1rem;}
+
+.mx-1 {margin: 0 1rem;}
+.mx-2 {margin: 0 2rem;}
+.mx-3 {margin: 0 3rem;}
+
+.my-1 {margin: 1rem 0;}
+.my-2 {margin: 2rem 0;}
+
+.list {list-style: none;}
+
+.subflex {display: flex;}
+.jc {justify-content: space-around;}
+.wdth {max-width: 90%;}
+
+.container{
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+}
+
+.card{
+    line-height: 1.6;
+    width: 80%;
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
+    background-color: rgba(245, 236, 236, 0.932);
+    color: #102038;
+}
+
+.btn {
+    /* display: inline-block; */
+    color: #ff9000;
+    background: #102038;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: #d48723;
+    background: #152c50;
+    padding: 1.1rem;
+}
+
+/* header */
+#header > div {
+    display: flex;
+}
+
+#header > div > p {
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+}
+
+/* navigation bar */
+#navbar{
+    position: sticky;
+    top: 0;
+    max-width: 100vw;
+    z-index: 2;
+}
+
+#navbar ul {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* home section */
+#main #lead-bg{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+#lead{
+    background: url(./imgs/flora.jpg) no-repeat center center/cover;
+    height: 100vh;
+    max-width: 40vw;
+    border-radius: 50%;
+}
+
+#lead .container{
+    height: inherit;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 15px;
+}
+
+#lead .container div{
+    padding-right: 10rem;
+}
+
+/* about section */
+#about .container{
+    max-height: inherit;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*contact content */
+#contact #form{
+    max-width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #22406e;
+}
+#contact #form h3{
+    border-bottom: 1px dashed #102038;
+}
+
+#contact #form #formwrap{
+    margin: 0 auto;
+    padding-left: 1.5rem;
+}
+
+#contact #form label{
+    display: block;
+    margin: 1rem 0;
+}
+
+#contact #form input,
+#contact #form textarea{
+    width: 90%;
+    padding: 0.75rem 0.5rem;
+}
+
+/* footer */
+#footer .container{
+    display: block;
+}
