@@ -38,6 +38,7 @@
     }
     
     #lead .container{
+        top: 5px;
         right: 5px;
         padding: 0;
     }
