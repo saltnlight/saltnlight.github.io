@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    src: url(./fonts/roboto/Roboto-Medium.ttf);
+    font-family: roboto;
+}
+
+@font-face{
+    src: url(./fonts/cookie/Cookie-Regular.ttf);
+    font-family: cookie;
+}
+
+body{
+    box-sizing: border-box;
+    font-family:cookie, serif;
+}
+
+/* Utility Classes */
+.bg-prycolor {background-color: #214f61;} 
+.bg-accent-color {background-color: #ff9000;}
+
+.txt-accent-color {color: #ff9000;}
+.txt-prycolor {color: #102038;}
+
+.outline-accentcolor {border-color: #ff9000;} 
+
+.txt-small { font-size: 1rem;}
+.txt-med { font-size: 1.5rem;}
+.txt-large { font-size: 3rem;}
+
+.list {list-style: none;}
+
+/* General */
+a{
+    text-decoration: none;
+    color: #102038;
+}
+
+p{
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    font-family: roboto, serif !important;
+}
+
+h2 {
+    display: block !important;
+    color: #ff9000;
+    letter-spacing: 3px;
+}
+
+h2 > span {
+   font-family: cookie serif;
+}
+
+figcaption, ul > li > a, ul > li{
+    font-family: roboto serif;
+}
+
+nav .navbar-nav .nav-item{
+    font-family: roboto serif;
+    font-size: 1.1rem;
+}
+
+h1 .navbar-brand{
+    font-size: 3rem;
+}
+
+/* Editing BS classes */
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: #ff9000 !important;
+}
+
+.form-check-input{
+    margin-left: 0.75rem;
+}
+
+.form-control{
+    width: 90%;
+}
+
+/* index page */
+#welcome{
+    position: relative;
+    background: url(./imgs/Lady\ with\ laptop\,\ studying\ or\ working\ con_..png) no-repeat center top/cover;
+    max-height: fit-content;
+    background-color: hue-rotate(250deg);
+}
+
+#fig{
+    margin-bottom: 0;
+    max-width: fit-content;
+}
+
+#welcomeFig{
+    width: 35%;
+    border-radius: 50%;
+    border: 10px solid #fff;;
+    position: sticky;
+    left: 35%;
+    z-index: 2;
+}
+
+#intro > img{
+    width: 60%;
+    display: flex;
+}
+
+/* about */
+h3 > img{
+    width: min-content;
+    height: min-content;
+}
+
+/* media queries */
+@media(max-width: 500px){
+    .form-control{
+        width: 80%;
+    }
+}
+
+@media(min-width: 769px){
+    #welcomeFig{
+        width: 20%;
+        left: 45%;
+    }
+}
