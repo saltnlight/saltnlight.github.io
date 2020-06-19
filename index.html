@@ -12,7 +12,7 @@
     </head>
 
     <body>
-      <header class="navbar navbar-expand-lg navbar-dark bg-prycolor pt-3">
+      <header id="header" class="navbar navbar-expand-lg navbar-dark bg-prycolor pt-3" data-spy="scroll" data-target="#scrollBtn" data-offset="0">
         <h1><a class="navbar-brand text-white txt-med" href="#">Flora Arong</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -63,25 +63,44 @@
           <p class="txt-med" data-words="Web Developer | Pastry Lover" data-wait="3s">Web Developer | Pastry Lover</p>
         </figcaption>
 
-        <div class="d-flex justify-content-center mt-4"><a href="./about.html" class="btn btn-outline-info text-center">Know More</a></div>
+        <div class="d-flex justify-content-center">
+          <button id="pop" class="btn btn-outline-info mt-4">Know More</button>
+        </div>
       </section>    
       
+      <section id="popup" class="container p-3 d-none">
+        <div class="d-flex justify-content-end">
+          <span id="popupCloseBar" class="txt-med text-secondary p-2">X</span>
+        </div>
+        <article id="popupContent" class="pb-3">  
+          <p class="text-center txt-accent-color txt-med">Please <span class="border-bottom border-dark pb-3">enter  your email to find out</span> more</p>
+          <form action="" class="p-3" id="popupForm">
+            <div class="form-group">
+              <label for="email" class="txt-med">Email</label>
+              <input type="email" name="email" id="email" class="w-100 p-2 border-top-0">
+            </div>
+            <button type="submit" class="txt-med bg-info w-100 p-1 border-radius-5">Send</button>
+          </form>
+          <p class="text-center small">I hate spam too. So you can be sure i will not spam your inbox with unneccessary or unsolisited emails</p>
+        </article>
+      </section>
+
       <div class="p-3 container-sm" aria-hidden="true"></div>
 
       <section id="intro" class="container">
         <h2 class="text-center text-bolder"><span>What You Do</span></h2>
         <img src="./imgs/thinking-guy.png" alt="image of a person coming up with an idea" class="container-fluid img-fluid">
-        <p class="txt-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde odio tenetur illo optio incidunt animi reprehenderit voluptatem? In officia, molestias perspiciatis velit delectus, numquam modi libero quasi repudiandae earum ipsum!</p>
+        <p class="txt-small">Come up with those idea worth spreading. Seek out team members to work on a new or already existing project. Decide to take your personal brand or business presence online.</p>
 
         <div class="p-4 mt-4 mb-5 border-bottom border-dotted" aria-hidden="true"></div>
 
         <h2 class="text-center"><span>What I Do</span></h2>
         <img src="./imgs/Girl-sitting-with-PC.jpeg" alt="Girl sitting with laptop" class=" container-fluid img-fluid">
-        <p class="txt-small"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia velit voluptate animi sapiente culpa, earum necessitatibus est doloribus assumenda quod! Accusamus nisi dicta, voluptatibus consequuntur quia a ducimus reiciendis repellat. <span><a href="mailto:arongflorence@yahoo.com" class="text-info">work with me</a></span></p>
+        <p class="txt-small"> Meet amazing people with great ideas and business there are passionate about. Talk about the manys ways we can put their business online. Essentially, i work with you to showcase your brand to the world. From user centered design to thoughtful content, responsive web designs, and eveything between <span><a href="mailto:arongflorence@yahoo.com" class="text-info">tell me about that project.</a></span></p>
       </section> 
 
-      <div id="top" class="d-none">
-        <p class=" d-inline small p-2">Back To Top</p>
+      <div id="top" class="d-flex justify-content-end py-2 px-3">
+        <p id="scrollBtn" class="d-inline text-center bg-info rounded-circle "><a href="index.html#header" class="text-white txt-large ">&uarr;</a></p>
       </div>
 
       <section class="container bg-prycolor mt-5 text-white px-3 pt-3">
@@ -115,5 +134,10 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       
+      <script>
+        $('[data-spy="scroll"]').each(function() {
+           let $spy = $(this).scrollspy('refresh'); 
+        });
+      </script>
   </body>
 </html>
